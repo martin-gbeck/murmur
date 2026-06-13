@@ -30,12 +30,14 @@ The menu bar is the entire UI. No Dock icon, no settings window.
 
 Requires only the Xcode Command Line Tools (`xcode-select --install`).
 
+Clone the repo (or download the ZIP via the green **Code** button and unzip it), then from the project folder:
+
 ```bash
-git clone https://github.com/martin-gbeck/murmur.git
-cd murmur
 ./packaging/build.sh
 cp -r dist/Murmur.app /Applications/
 ```
+
+`build.sh` compiles a release build and assembles `dist/Murmur.app`. Because you built it locally there's no quarantine flag, so it launches with no Gatekeeper prompt.
 
 ## First launch
 
