@@ -4,7 +4,7 @@ A lightweight, open-source, pay-as-you-go alternative to premium dictation servi
 
 The entire app is about half a megabyte of native Swift. Bring your own OpenAI API key and pay for what you actually dictate: $15, the price of one month's subscription elsewhere, buys roughly 75 hours or 600,000 words of dictation here. Typical use lands near $1/month. No account, no server, no telemetry: your audio goes from your mic to OpenAI and the text lands at your cursor.
 
-> Hero GIF placeholder: record `ctrl+option+space` → speak → text appears in the focused app. (Add before the repo goes public.)
+> Hero GIF placeholder: record `ctrl+option+space` → speak → text appears in the focused app.
 
 ## How it works
 
@@ -120,7 +120,7 @@ swift run Murmur --overlay-test          # cycle the on-screen pills for 10 seco
 ./packaging/build.sh     # release build → dist/Murmur.app (ad-hoc signed)
 ```
 
-Zero dependencies: Foundation's URLSession talks to OpenAI directly. See [CONTRIBUTING.md](CONTRIBUTING.md).
+Zero dependencies: Foundation's URLSession talks to OpenAI directly. See [CONTRIBUTING.md](CONTRIBUTING.md) for contributing and [ARCHITECTURE.md](ARCHITECTURE.md) for how the app is structured and the design it's built on.
 
 ## Roadmap
 
